@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assessment</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assessment.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <img
+        src="assets\logo\MindFulConnect_transparent-.png"
+        alt="MindFulConnect Logo"
+      />
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
+        <a href="support.html">Support Forum</a>
+        <a href="counseling.html">Counseling</a>
+        <a href="assessment.html">Mental Health Assessment</a>
+        <a href="login.html">Login/Sign-Up</a>
+      </nav>
+    </header>
+
+    <section class="assessment-main">
+      <h1>Assess Your Mental Health</h1>
+      <div class="assessment-categories">
+        <h2>Assessment Categories</h2>
+        <select id="categorySelect">
+          <option value="">Select a category</option>
+          <option value="anxiety">Anxiety Assessment</option>
+          <option value="depression">Depression Assessment</option>
+          <option value="mindfulness">Mindfulness Assessment</option>
+        </select>
+      </div>
+
+      <div id="assessmentProgress" class="assessment-progress">
+        <h2>Assessment Progress</h2>
+        <p>
+          Question <span id="currentQuestion">1</span> of
+          <span id="totalQuestions">5</span>
+        </p>
+        <div class="progress-bar">
+          <div id="progress"></div>
+        </div>
+      </div>
+
+      <div id="assessmentQuestion" class="assessment-question">
+        <h2 id="questionTitle">Question:</h2>
+        <select id="answerSelect">
+          <option value="">Select an answer</option>
+          <option value="rarely">Rarely</option>
+          <option value="sometimes">Sometimes</option>
+          <option value="often">Often</option>
+          <option value="always">Always</option>
+        </select>
+        <button id="nextButton" class="button" disabled>Next</button>
+      </div>
+
+      <div id="assessmentResults" class="results">
+        <h2>Results</h2>
+        <p id="resultText">Your personalized results</p>
+      </div>
+
+      <div class="previous-results">
+        <h2>Previous Assessment Results</h2>
+        <p>No previous results available.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p><a href="#">Privacy Policy</a> | <a href="#">Contact Us</a></p>
+    </footer>
+
+    <script src="assessment.js"></script>
+  </body>
+</html>
